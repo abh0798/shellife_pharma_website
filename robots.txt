@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /checkout/
+
+# Allow crawling of everything else
+Allow: /
+
+Sitemap: https://shellifepharma.in/sitemap.xml
