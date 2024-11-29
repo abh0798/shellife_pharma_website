@@ -1,235 +1,207 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
     color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navbar {
+    background-color: #003d99;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #0073e6;
     padding: 10px 20px;
+    align-items: center;
 }
 
 .logo {
-    height: 50px;
+    max-height: 50px; /* Reduced the logo size */
+    width: auto;
+    border-radius: 8px; /* Added rounded corners to the logo */
 }
 
+/* Navigation links hidden on mobile */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 24px;
-    width: 50%;
-}
-
-.nav-links li {
-    padding: 0 15px;
+    gap: 15px;
 }
 
 .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ff6600;
+.nav-links a:hover, .nav-links a.active {
+    background-color: #ffcc00;
+    color: #003d99;
+    border-radius: 5px;
 }
 
-.hamburger {
+/* Hamburger Icon */
+#hamburger {
     display: none;
     cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
-
-/* Slider Section */
-.slider {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    width: 400%; /* Assuming 4 slides */
-    height: 100%;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-}
-
-.slide {
-    width: 100%; /* Each slide takes 100% of the viewport */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Navigation Buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Animation for slider */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+#hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('pharma-bg.jpg');
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
     background-size: cover;
     background-position: center;
-    color: white;
-    text-align: center;
-    padding: 50px 0;  /* Adjust this padding to reduce space */
-    position: relative;
-    margin-bottom: 0;  /* Ensure there's no extra margin at the bottom */
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.hero-content {
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
-.hero-content h1 {
-    font-size: 48px;
-}
-
-.hero-content p {
-    font-size: 24px;
-    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .btn-primary {
-    background-color: #ff6600;
-    color: white;
+    background-color: #ffcc00;
+    color: #003d99;
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffc107;
+    color: #002c70;
 }
 
 /* Mission Section */
 .mission {
+    text-align: center;
     padding: 40px 20px;
     background-color: #ffffff;
-    text-align: center;
 }
 
 .mission h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    color: #003d99;
+    font-size: 2.5rem; /* Resized to match "Our Products" */
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .mission p {
-    font-size: 18px;
-    max-width: 800px;
+    font-size: 1.25rem; /* Consistent size with "Our Products" text */
+    line-height: 1.6;
+    text-align: center;
     margin: 0 auto;
+    max-width: 800px; /* Ensures better readability */
 }
 
 /* Products Section */
 .products {
     padding: 40px 20px;
-    background-color: #f0f8ff;
+    background-color: #f4f4f4;
 }
 
 .products h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
+    color: #003d99;
+    font-size: 2.5rem; /* Larger size for the heading */
+    text-align: center; /* Center-aligned */
+    margin-bottom: 1rem; /* Spacing below the heading */
 }
 
 .product-grid {
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product {
     text-align: center;
-    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Images */
 .product img {
-    width: 100%;
-    height: 150px;
+    width: 100%;          /* Makes the image responsive by taking full width */
+    height: 200px;        /* Set a fixed height to ensure uniform size */
+    object-fit: contain;  /* Resizes the image to fit within the container without cropping */
+    border-radius: 8px;   /* Optional: Add rounded corners for a cleaner look */
 }
 
 .product h3 {
-    font-size: 24px;
-    margin: 10px 0;
+    color: #003d99;
 }
 
 /* Footer */
 footer {
-    background-color: #0073e6;
-    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background-color: #333333;
+    color: #fff;
 }
 
-/* Media Queries */
+/* General Section Padding */
+section {
+    padding: 40px 20px; /* Consistent spacing across all sections */
+}
+
+.product-description {
+    text-align: center; /* Center the text */
+    font-weight: bold;  /* Make the text bold */
+    color: #000;        /* Set color to black */
+    font-size: 1.2em;   /* Optional: Adjust font size if needed */
+    margin: 20px 0;     /* Optional: Add some spacing around the text */
+}
+
+
+/* Mobile View */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; /* Hide the navigation links by default */
         flex-direction: column;
+        width: 100%;
+        background-color: #003d99;
         position: absolute;
         top: 60px;
-        right: 0;
-        background-color: #0073e6;
-        width: 100%;
+        left: 0;
+        gap: 10px;
+        padding: 20px 0;
+        align-items: center;
     }
 
     .nav-links.open {
-        display: flex;
+        display: flex; /* Show the menu when 'open' class is added */
     }
 
-    .hamburger {
-        display: block;
-    }
-
-    .product-grid {
-        flex-direction: column;
-        align-items: center;
+    #hamburger {
+        display: flex; /* Show the hamburger menu only on mobile */
     }
 }
