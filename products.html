@@ -18,6 +18,8 @@
     <meta property="og:image" content="https://shellifepharma.in/img/Logo_horizontal.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shellifepharma.in/products">
+    <meta property="og:site_name" content="Shellife Pharma">
+    <meta property="og:see_also" content="https://www.linkedin.com/company/shellife-pharma/">
 
     <!-- Structured Data (JSON-LD) for Product Listings -->
     <script type="application/ld+json">
@@ -35,12 +37,34 @@
                 "@type": "Offer",
                 "url": "https://shellifepharma.in/products",
                 "priceCurrency": "INR",
-                "price": "Contact for pricing"
+                "price": "100",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Shelmoist",
+            "image": "https://shellifepharma.in/img/shelmoist.jpg",
+            "description": "Unique combination for maximum lubrication, hydration, and long-lasting relief.",
+            "brand": {
+                "@type": "Brand",
+                "name": "Shellife Pharma"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "https://shellifepharma.in/products",
+                "priceCurrency": "INR",
+                "price": "280",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
             }
         }
     </script>
 
-    <title>Shellife Pharma | Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -57,8 +81,8 @@
             <div></div>
         </div>
         <ul id="nav-links" class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -73,12 +97,14 @@
             <h3>Shelfie</h3>
             <p><strong>An advanced approach for comprehensive dry eye management.</strong></p>
             <p>Sodium Carboxymethylcellulose IP 0.5% w/v + Glycerine 0.5% w/v + SOC</p>
+            <p><strong>MRP:</strong> ₹100</p>
         </div>
         <div class="product">
             <img src="img/shelmoist.jpg" alt="Shelmoist">
             <h3>Shelmoist</h3>
             <p><strong>Unique combination for maximum lubrication, hydration, and long-lasting relief.</strong></p>
             <p>Sodium Hyaluronate 0.1% + SOC 0.1 mg</p>
+            <p><strong>MRP:</strong> ₹280</p>
         </div>
     </div>
 </section>
