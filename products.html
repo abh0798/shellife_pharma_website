@@ -47,16 +47,18 @@
 <header>
     <nav class="navbar">
         <div class="logo-container">
-            <img src="img/Logo_horizontal.png" alt="Shellife Pharma Logo" class="logo">
+            <a href="index.html">
+                <img src="img/Logo_horizontal.png" alt="Shellife Pharma Logo" class="logo">
+            </a>
         </div>
-        <div class="hamburger" id="hamburger">
+        <div id="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html" class="active">Products</a></li>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -82,7 +84,25 @@
 </section>
 
 <footer>
-    <p>&copy; 2024 Shellife Pharma. All rights reserved. | Headquarters: New Delhi</p>
+    <div class="footer-container">
+        <div class="footer-section">
+            <a href="index.html">
+                <img src="img/Logo_horizontal.png" alt="Shellife Pharma Logo" class="footer-logo">
+            </a>
+            <p>&copy; 2024 Shellife Pharma. All rights reserved.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> Shellife Pharma, New Delhi, India</p>
+            <p><strong>Email:</strong> <a href="mailto:shanusingh665@gmail.com">shanusingh665@gmail.com</a></p>
+        </div>
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.linkedin.com/company/shellifepharma" target="_blank">
+                <img src="img/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </div>
 </footer>
 
 <script src="script.js"></script>
