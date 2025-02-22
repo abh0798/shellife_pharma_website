@@ -129,10 +129,12 @@ body {
 }
 
 .product-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .product {
@@ -142,6 +144,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product:hover {
@@ -151,13 +156,21 @@ body {
 /* Product Images */
 .product img {
     width: 100%;          /* Makes the image responsive by taking full width */
-    height: 200px;        /* Set a fixed height to ensure uniform size */
+    height: 250px;        /* Increased height for larger tiles */
     object-fit: contain;  /* Resizes the image to fit within the container without cropping */
     border-radius: 8px;   /* Optional: Add rounded corners for a cleaner look */
 }
 
 .product h3 {
     color: #003d99;
+    margin: 15px 0;
+    font-size: 1.5rem; /* Larger font size for product titles */
+}
+
+.product p {
+    margin: 5px 0;
+    flex-grow: 1; /* Ensures the description takes up remaining space */
+    font-size: 1.1rem; /* Slightly larger font size for descriptions */
 }
 
 /* Footer */
@@ -221,7 +234,6 @@ footer {
     transform: scale(1.1);
 }
 
-
 /* General Section Padding */
 section {
     padding: 40px 20px; /* Consistent spacing across all sections */
@@ -234,7 +246,6 @@ section {
     font-size: 1.2em;   /* Optional: Adjust font size if needed */
     margin: 20px 0;     /* Optional: Add some spacing around the text */
 }
-
 
 /* Mobile View */
 @media (max-width: 768px) {
@@ -257,5 +268,13 @@ section {
 
     #hamburger {
         display: flex; /* Show the hamburger menu only on mobile */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .product img {
+        height: 200px; /* Slightly smaller images on mobile */
     }
 }
