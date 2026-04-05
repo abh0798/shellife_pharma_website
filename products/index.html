@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Shellife Pharma's trusted eye care solutions — Shelfie, Shelmoist, Philgate-KT, Ekaflox, Ekaflox-DM, Ekaflox-LP, and Shelvital.">
+    <meta name="keywords" content="Shellife Pharma products, eye care, Shelfie, Shelmoist, Philgate-KT, Ekaflox, Shelvital, eye drops, dry eye, eye infections">
+    <meta name="author" content="Shellife Pharma">
+    <meta name="robots" content="index, follow">
+    <title>Shellife Pharma | Products</title>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <meta property="og:title" content="Shellife Pharma | Eye Care Products">
+    <meta property="og:description" content="Explore our range of high-quality eye care solutions.">
+    <meta property="og:image" content="https://shellifepharma.in/img/Logo_horizontal.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shellifepharma.in/products">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="../">
+                <img src="../img/Logo_horizontal.png" alt="Shellife Pharma Logo" class="logo">
+            </a>
+        </div>
+        <div id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <div></div><div></div><div></div>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../products.html" class="active">Products</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h1>Our Products</h1>
+    <p>High-quality eye care solutions designed for every need</p>
+</div>
+
+<section class="products">
+    <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="dry-eye">Dry Eye</button>
+        <button class="filter-btn" data-filter="infection">Infection</button>
+        <button class="filter-btn" data-filter="post-op">Post-Operative</button>
+        <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product reveal" data-category="dry-eye" onclick="openModal('shelfie')">
+            <div class="product-img-wrap">
+                <img src="../img/shelfie.jpg" alt="Shelfie Eye Drops" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Dry Eye</span>
+                <h3>Shelfie</h3>
+                <p class="product-tagline">Advanced approach for comprehensive dry eye management.</p>
+                <p class="product-composition">Sodium Carboxymethylcellulose IP 0.5% w/v + Glycerine 0.5% w/v + SOC</p>
+                <div class="product-footer">
+                    <span class="product-price">₹100</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product reveal" data-category="dry-eye" onclick="openModal('shelmoist')">
+            <div class="product-img-wrap">
+                <img src="../img/shelmoist.jpg" alt="Shelmoist Eye Drops" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Dry Eye</span>
+                <h3>Shelmoist</h3>
+                <p class="product-tagline">Unique combination for maximum lubrication, hydration, and long-lasting relief.</p>
+                <p class="product-composition">Sodium Hyaluronate 0.1% + SOC 0.1 mg</p>
+                <div class="product-footer">
+                    <span class="product-price">₹280</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product reveal" data-category="post-op" onclick="openModal('philgate')">
+            <div class="product-img-wrap">
+                <img src="../img/philgate-kt.jpeg" alt="Philgate-KT Eye Drops" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Post-Operative</span>
+                <h3>Philgate-KT</h3>
+                <p class="product-tagline">Fast relief from post-operative eye pain, inflammation, and infections for sensitive eyes.</p>
+                <p class="product-composition">Gatifloxacin 0.3% w/v + Ketorolac 0.4% w/v</p>
+                <div class="product-footer">
+                    <span class="product-price">₹172</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product reveal" data-category="infection" onclick="openModal('ekaflox')">
+            <div class="product-img-wrap">
+                <img src="../img/ekaflox.jpeg" alt="Ekaflox Eye Drops" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Infection</span>
+                <h3>Ekaflox</h3>
+                <p class="product-tagline">Treats eye infections including bacterial conjunctivitis.</p>
+                <p class="product-composition">Moxifloxacin Hydrochloride 5.0 mg</p>
+                <div class="product-footer">
+                    <span class="product-price">₹100</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product reveal" data-category="infection" onclick="openModal('ekaflox-dm')">
+            <div class="product-img-wrap">
+                <img src="../img/ekaflox-dm.jpeg" alt="Ekaflox-DM Eye Drops" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Infection</span>
+                <h3>Ekaflox-DM</h3>
+                <p class="product-tagline">Dual-action formula for effective relief from eye infections and inflammation.</p>
+                <p class="product-composition">Moxifloxacin 0.5% w/v + Dexamethasone Phosphate 0.1% w/v</p>
+                <div class="product-footer">
+                    <span class="product-price">₹120</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product reveal" data-category="infection" onclick="openModal('ekaflox-lp')">
+            <div class="product-img-wrap">
+                <img src="../img/ekaflox-lp.jpeg" alt="Ekaflox-LP Eye Drops" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Infection</span>
+                <h3>Ekaflox-LP</h3>
+                <p class="product-tagline">Antibiotic and corticosteroid combination for chronic eye infections and inflammation.</p>
+                <p class="product-composition">Moxifloxacin 0.5% w/v + Loteprednol Etabonate 0.5% w/v</p>
+                <div class="product-footer">
+                    <span class="product-price">₹180</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product reveal" data-category="nutrition" onclick="openModal('shelvital')">
+            <div class="product-img-wrap">
+                <img src="../img/shelvital.jpeg" alt="Shelvital Eye Supplement" loading="lazy">
+            </div>
+            <div class="product-body">
+                <span class="product-category">Nutrition</span>
+                <h3>Shel-vital</h3>
+                <p class="product-tagline">Advanced nutritional support for eye health and vision protection.</p>
+                <p class="product-composition">Lutein 10mg + Zeaxanthin 2mg + Lycopene 6% 10mg + Vitamin E 11 IU + Zinc 13.2mg + Manganese 4mg + Astaxanthin 2mg + Selenium 40mcg + Vitamin C 80mg + Vitamin B6 1.9mg + Vitamin B12 2.2mcg + Copper 1.7mg + Folic Acid 150mcg</p>
+                <div class="product-footer">
+                    <span class="product-price">₹180</span>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <a href="../index.html">
+                <img src="../img/Logo_horizontal.png" alt="Shellife Pharma Logo" class="footer-logo">
+            </a>
+            <p class="footer-tagline">Delivering innovative eye care solutions trusted by healthcare professionals across India.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📍 New Delhi, India</p>
+            <p>✉️ <a href="mailto:shanusingh665@gmail.com">shanusingh665@gmail.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="https://www.linkedin.com/company/shellife-pharma/" target="_blank" rel="noopener">
+                <img src="../img/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Shellife Pharma. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal" id="modal-box">
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+        <div class="modal-img"><img id="modal-img" src="" alt=""></div>
+        <div class="modal-body">
+            <h2 id="modal-name"></h2>
+            <p class="modal-tagline" id="modal-tagline"></p>
+            <p class="modal-section-title">Composition</p>
+            <p class="modal-composition" id="modal-composition"></p>
+            <p class="modal-price" id="modal-price"></p>
+        </div>
+    </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
